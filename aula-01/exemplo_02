@@ -1,0 +1,15 @@
+public class Exemplo2 { // Corrigido para acompanhar o nome do arquivo Exemplo2.java
+    // FUNÇÃO INÍCIO
+    public static void main(String[] args) {
+        byte idade = 20; // Variável agora inicializada com um valor
+        float altura=1.80f, peso=88.5f;
+        String nome="Amanda";
+             
+        System.out.println("Nome:"+nome+"\nidade:"+idade+"\naltura:"+altura);      
+        if (idade > 18){
+            System.out.println("Maior de idade");
+        }else{
+            System.out.println("Menor de idade");
+        }
+    }
+}
