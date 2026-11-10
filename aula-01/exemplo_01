@@ -1,0 +1,13 @@
+public class Exemplo{
+    // FUNÇÃO INÍCIO
+    public static void main(String[] args) {
+        int numero=0;
+        double media;
+        float preco;
+        short pontuacao=500;
+        char confirma = 'S';
+        String nome;
+
+        System.out.println("Aula de Java");
+    }
+}
