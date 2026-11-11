@@ -1,0 +1,16 @@
+public class Exemplo5 {
+    public static void main(String[] args) {
+        int quantidadeDiasMes = 31;
+        String resposta;
+        
+        if (quantidadeDiasMes < 30) {
+            System.out.println("O mês é fevereiro");
+        } else {
+            System.out.println("O mês é diferente de fevereiro");
+        }
+        
+        // Operador Ternário
+        resposta = (quantidadeDiasMes < 30) ? "O mês é fevereiro" : "Não é fevereiro";
+        System.out.println("Resposta: " + resposta);
+    }
+}
