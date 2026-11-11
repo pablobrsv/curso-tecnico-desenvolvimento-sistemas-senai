@@ -1,0 +1,12 @@
+public class Exemplo3 {
+    public static void main(String[] args) {
+        int numero1 = 1000;
+        int numero2 = 5000;
+
+        // Descobre qual é o maior usando o operador ternário (condição ? se_verdadeiro : se_falso)
+        int maior = (numero1 > numero2) ? numero1 : numero2;
+
+        // Exibe o resultado de forma limpa
+        System.out.println("O maior número é: " + maior);
+    }
+}
