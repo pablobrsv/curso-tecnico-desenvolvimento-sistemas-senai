@@ -1,0 +1,9 @@
+public class ExemploFormatacao {
+    public static void main(String[] args) {
+    
+        String nome = "Ana";
+        int idade=20;
+        double altura = 1.54;
+        System.out.printf("%s tem %d anos e altura %2f",nome, idade, altura);
+    }
+}
