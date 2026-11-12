@@ -1,0 +1,27 @@
+import javax.swing.JOptionPane;
+
+public class ReajusteSalarial {
+    public static void main(String[] args) {
+    
+        // Leitura dos dados através de caixas de texto flutuantes
+        String nome = JOptionPane.showInputDialog("Digite o seu nome:");
+        String email = JOptionPane.showInputDialog("Digite o seu e-mail:");
+        String salarioStr = JOptionPane.showInputDialog("Digite o seu salário atual:");
+
+        // Conversão do texto digitado para o tipo numérico double
+        double salario = Double.parseDouble(salarioStr);
+
+        // Cálculo do reajuste salarial (acréscimo de 10%)
+        double salarioReajustado = salario * 1.10;
+
+        // Montagem da mensagem de saída formatada
+        String mensagem = "--- Dados Atualizados ---\n" +
+                          "Nome: " + nome + "\n" +
+                          "E-mail: " + email + "\n" +
+                          "Salário Base: R$ " + String.format("%.2f", salario) + "\n" +
+                          "Salário com 10% de Reajuste: R$ " + String.format("%.2f", salarioReajustado);
+
+        // Exibição dos dados em uma janela de diálogo
+        JOptionPane.showMessageDialog(null, mensagem);
+    }
+}
