@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class CustoCombustivel {
+
+    static double calcularCusto(double distancia, double precoLitro, double consumo) {
+        double litros = distancia / consumo;
+        return litros * precoLitro;
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        System.out.printlf("Digite a distância percorrida (km): ");
+        double distancia = scanner.nextDouble();
+
+        System.out.println("Digite o preço do litro do combustível em R$: ");
+        double precoLitro = scanner.nextDouble();
+
+        System.out.println("Digite o consumo do veículo (km/l): ");
+        double consumo = scanner.nextDouble();
+
+        scanner.close();
+
+        double custo = calcularCusto(distancia, precoLitro, consumo);
+        System.out.printf("O custo da viagem é: R$ %.2f%n", custo);
+    }
+}
