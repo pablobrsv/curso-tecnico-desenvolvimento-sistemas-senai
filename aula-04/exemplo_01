@@ -1,0 +1,12 @@
+public class ApresentarPessoa {
+    
+    static void apresentarPessoa(String nome, int idade) {
+        System.out.println("Nome: " + nome + " || Idade: " + idade);
+    }
+
+    public static void main(String[] args) {
+        apresentarPessoa("Ana", 17);
+        apresentarPessoa("Bruno", 18);
+        apresentarPessoa("Carla", 16);
+    }
+}
